@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 324px;
+    top: 0;
+}
+
+.faq {
+    background-color: white;
+    z-index: 1;
+    width: 600px;
+    padding: 45px 40px 45px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: hsl(292, 42%, 14%);
+    padding-left: 20px;
+}
+
+summary {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary:hover {
+    color: #a82ced;
+}
+
+.minus {
+    display: none;
+}
+
+.det[open] .plus {
+    display: none;
+}
+
+.det[open] .minus {
+    display: block;
+}
+
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    color: hsl(292, 16%, 49%);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+hr {
+    margin-top: 25px;
+    opacity: 15%;
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .star {
+        width: 32px;
+    }
+
+    .faq {
+        width: 330px;
+        border-radius: 10px;
+        padding: 25px 25px 25px 25px;
+    }
+
+    summary {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
